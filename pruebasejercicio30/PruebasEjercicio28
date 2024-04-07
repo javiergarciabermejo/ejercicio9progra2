@@ -1,0 +1,45 @@
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class PruebasEjercicio28 {
+
+  
+    public void testSumaN() {
+        assertEquals(15, Ejercicio28.sumaN(5));
+        assertEquals(55, Ejercicio28.sumaN(10));
+        assertEquals(0, Ejercicio28.sumaN(0));
+    }
+
+    
+    public void testFactorial() {
+        assertEquals(120, Ejercicio28.factorial(5));
+        assertEquals(6, Ejercicio28.factorial(3));
+        assertEquals(1, Ejercicio28.factorial(0));
+    }
+
+    
+    public void testPotencia() {
+        assertEquals(8, Ejercicio28.potencia(2, 3));
+        assertEquals(25, Ejercicio28.potencia(5, 2));
+        assertEquals(1, Ejercicio28.potencia(3, 0));
+    }
+
+    public void testSumaLista() {
+        assertEquals(15, Ejercicio28.sumaLista(Arrays.asList(1, 2, 3, 4, 5)));
+        assertEquals(30, Ejercicio28.sumaLista(Arrays.asList(10, 20, 30)));
+        assertEquals(0, Ejercicio28.sumaLista(new ArrayList<Integer>()));
+    }
+
+    
+    public void testMediaLista() {
+        assertEquals(3, Ejercicio28.mediaLista(Arrays.asList(1, 2, 3, 4, 5)), 0.001);
+        assertEquals(20, Ejercicio28.mediaLista(Arrays.asList(10, 20, 30)), 0.001);
+        assertEquals(0, Ejercicio28.mediaLista(new ArrayList<Integer>()), 0.001);
+    }
+
+
+
+}
